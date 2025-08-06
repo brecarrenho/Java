@@ -1,0 +1,117 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil Profissional</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .card-detalhes {
+      background: #ff9fd2;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      transition: box-shadow 0.3s ease;
+      max-width: 400px;
+      margin: 40px;
+    }
+
+    .card-detalhes:hover {
+      box-shadow: 0 0 20px rgba(217, 48, 213, 0.4);
+    }
+
+    .card-detalhes h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .detalhe-item {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .detalhe-item i {
+      margin-right: 8px;
+      color: #d930d5;
+      width: 20px;
+      text-align: center;
+    }
+
+    .bold {
+      font-weight: bold;
+      color: #d930d5;
+    }
+
+    .decoracao {
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle, #d930d5 20%, transparent 70%);
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .card-detalhes * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Perfil</h1>
+    <p>Estou iniciando minha carreira em desenvolvimento de sistemas e busco uma
+      posição onde possa adquirir experiência e aprimorar minhas habilidades</p>
+  </header>
+
+  <main class="container">
+    <section class="card-detalhes">
+      <h2>Detalhes</h2>
+      <div class="detalhe-item"><i class="fas fa-user"></i><span class="bold">Nome:</span> Brenda Carrenho Lisboa</div>
+      <div class="detalhe-item"><i class="fas fa-cake-candles"></i><span class="bold">Idade:</span> 17 anos</div>
+      <div class="detalhe-item"><i class="fas fa-location-dot"></i><span class="bold">Local:</span> Votorantim, Brasil</div>
+      <div class="decoracao"></div>
+    </section>
+
+    <section class="sobre">
+      <h2>Sobre mim</h2>
+      <p>Eu sou uma jovem iniciante em programação,cursando técnico em desenvovimento de sistemas.
+        Tenho conhecimento básico em distintas linguagem de programação. Sou uma pessoa comunicativa
+        e sempre disposta a aprender coisas novas, trabalho bem tanto em equipe, tanto individualmente. Estou apta a resolver qualquer desafio. </p>
+      <p class="creditos">Imagem por <a href="WhatsApp Image 2025-08-06 at 12.05.04.jpeg" target="_blank">Freepik</a></p>
+      <button id="contateBtn">Contate-me</button>
+    </section>
+
+    <aside class="perfil-lateral">
+      <h3>OLÁ, EU SOU BRENDA</h3>
+      <p>Sou uma futura programadora.</p>
+      <div class="social-icons">
+        <a href="#"><img src="2.png" alt="WhatsApp" /></a>
+        <a href="https://wa.me/15996568904" class="meu botão">Clique aqui</a>
+        <a href="#"><img src="3.png" alt="Instagram" /></a>
+        <button id="contateBtn"></button>
+        <a href="#"><img src="4.avif" alt="Twitter" /></a>
+        <button id="contateBtn"></button>
+      </div>
+      <img src="WhatsApp Image 2025-08-06 at 12.05.04.jpeg" alt="" class="perfil-img">
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
