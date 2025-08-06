@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+.meubotao{
+    position: absolute;
+    width: 100px;
+}
 body {
     background-color: #f8cfe7;
     color: #e47adb;
